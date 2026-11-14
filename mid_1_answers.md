@@ -215,7 +215,7 @@
 5. **Fewer failure points** – no extra monitoring/decision components to fail; no stale-information problems.
 6. **Resource efficient** – no CPU/network spent on load information; small systems have little imbalance to correct.
 
-| Static | Dynamic |
+| Static | Dynamic | |
 |---|---|---|
 | Information | Not needed at run time | Needs real-time state |
 | Overhead | Very low | High |
