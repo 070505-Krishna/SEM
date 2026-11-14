@@ -214,11 +214,13 @@
 4. **Predictability** – deterministic behaviour, easier capacity analysis.
 5. **Fewer failure points** – no extra monitoring/decision components to fail; no stale-information problems.
 6. **Resource efficient** – no CPU/network spent on load information; small systems have little imbalance to correct.
-| | Static | Dynamic |
+
+| Static | Dynamic |
 |---|---|---|
 | Information | Not needed at run time | Needs real-time state |
 | Overhead | Very low | High |
 | Complexity | Simple | Complex |
 | Adapts to change | No | Yes |
 | Best for | Small, uniform, predictable | Large, heterogeneous, bursty |
+
 **Conclusion:** when load is uniform and predictable, the overhead and complexity of dynamic balancing outweigh its gains, so static balancing is more effective; dynamic becomes preferable as size and variability grow.
