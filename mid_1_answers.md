@@ -97,7 +97,8 @@
 6. **Stateful/legacy applications** cannot scale horizontally, forcing larger-than-needed VMs.
 7. **Idle/forgotten resources (VM sprawl)** and conservative safety margins to protect SLAs.
 8. **Cost trade-off:** scale-in too early may cause under-provisioning; scale-out too early causes waste.
-|.  | Over-provisioning | Under-provisioning |
+
+|  | Over-provisioning | Under-provisioning |
 |---|---|---|
 | Effect | Wasted money | Poor performance, SLA breach |
 | Example | VMs left running overnight | Exam portal crashing at start of exam |
