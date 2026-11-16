@@ -226,6 +226,7 @@ No server management • event-driven • automatic scaling (to zero) • pay-pe
 | Constraints | Time/memory/package limits, stateless | Few limits, can be stateful |
 | Cost | Pay per use; cheap for sporadic | Pay for provisioned capacity; cheaper for steady high load |
 | Vendor dependency | High (platform-specific triggers/APIs) | Lower (portable with containers/K8s) |
+
 **Recommendation for unpredictable event-driven workloads:** serverless functions (queue/event triggered) — automatic scaling and no idle cost; mitigate cold starts using provisioned concurrency; use an abstraction/open frameworks (Serverless Framework, Knative) or keep business logic portable to reduce lock-in; fall back to containers for long/steady jobs (hybrid).
 
 **Keywords:** FaaS, BaaS, event-driven, trigger, cold start, handler, concurrency, pay-per-invocation, execution role, Step Functions, Durable Functions.
