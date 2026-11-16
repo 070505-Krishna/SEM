@@ -128,6 +128,7 @@
 | Guest awareness | No | Yes | No |
 | Compatibility | Any OS | Only portable/modified OS (not closed-source Windows) | Any OS on VT-capable CPU |
 | Examples | VMware ESX (early), VirtualBox | Xen PV | KVM, Hyper-V, VMware ESXi, Xen HVM |
+
 **Conclusion:** modern systems prefer hardware-assisted virtualization (often with para-virtual I/O drivers) for the best mix of compatibility and speed.
 
 ### Q7.a. Discuss the complementary role of SOA and cloud computing.
