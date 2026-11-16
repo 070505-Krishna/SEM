@@ -398,4 +398,11 @@ def hello(request):
 | Unit | Function | Function App | Function |
 | Key triggers | S3, API Gateway, SQS, DynamoDB | Blob, Queue, Timer, Event Grid | Pub/Sub, Cloud Storage, HTTP |
 | Workflow/orchestration | Step Functions | Durable Functions | Workflows |
-| Special | 
+| Special | Layers, provisioned concurrency | Bindings, Premium plan | 2nd gen on Cloud Run |
+| Deploy tool | SAM/Console/CLI | Core Tools/VS Code | `gcloud functions deploy` |
+ 
+Keywords: Pub/Sub, Eventarc, gcloud, service account, min instances, Cloud Run, functions framework.
+ 
+---
+## Coverage check after this supplement
+All syllabus topics in Units I–V now have at least definition, explanation and exam-answer coverage across the ZIP + this file. Remaining caveat: the **exact textbook case study for Unit IV** and the **"three perspectives" triad** should be confirmed from your class notes.
