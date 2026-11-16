@@ -174,6 +174,7 @@ Declarative config • versioned & immutable in Git • automatically pulled/app
 | Execution model | Pipeline jobs run on agents; **push-based**, imperative (scripts) | Controller inside cluster; **pull-based**, declarative, continuous reconciliation |
 | Source of truth | Pipeline/job config | Git repository of manifests |
 | Role in cloud-native delivery | Builds image, runs tests, updates manifest | Deploys image from Git to cluster, detects drift |
+
 **They complement, not replace:** Jenkins builds/tests/pushes image and commits new image tag to the config repo; Argo CD detects the commit and deploys it. Separation of concerns improves security and auditability.
 **Keywords:** Jenkinsfile, agent, plugin, push vs pull, GitOps, sync, drift, rollback, runner, pipeline-as-code.
 
