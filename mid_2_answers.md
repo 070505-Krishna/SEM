@@ -228,6 +228,7 @@ Remedies: containers/Kubernetes, open standards (OVF, TOSCA, OIDC), open-source 
 | Execution constraints | Time limits (e.g., minutes), memory/package size, limited local state, concurrency quotas | Few limits; can hold state, long jobs, custom runtimes |
 | Cost | Pay per invocation/ms; cheap for sporadic loads | Pay for provisioned capacity; economical for steady high load |
 | Vendor dependency | High – triggers, APIs, event formats are provider-specific | Lower – containers/Kubernetes are portable |
+
 **Recommendation for unpredictable workloads:** use **serverless functions** (queue/event-triggered) as the primary approach because they scale instantly from zero to bursts and incur no idle cost. Mitigate drawbacks: provisioned concurrency/warm pools for latency-sensitive paths; keep business logic in portable libraries and use abstractions (Serverless Framework, Terraform, Knative) to limit lock-in; offload long-running or steady-state components to containerised microservices (hybrid). Choose the provider on trigger ecosystem, existing cloud, pricing and limits.
 ```
  Event (queue/API/file) -> [Function: auto-scale 0..N] -> Managed DB/Storage
