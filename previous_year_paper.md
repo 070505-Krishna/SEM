@@ -213,6 +213,7 @@ A hypervisor is the software layer that creates and runs virtual machines. It is
 | Customer manages | OS, middleware, app, data | App, data | Nothing/only data usage |
 | Control | High | Medium | Low |
 | Example | EC2 | App Engine | Gmail |
+
 **Deployment models (brief):** public, private, hybrid, community.
 **Conclusion:** choose IaaS for control, PaaS for development speed, SaaS for ready software.
 **Keywords:** IaaS, PaaS, SaaS, XaaS, hypervisor, runtime, shared responsibility.
